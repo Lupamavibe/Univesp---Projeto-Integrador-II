@@ -1,0 +1,130 @@
+body {
+    background-image: url('file:///C:/Users/Barba/OneDrive/Documentos/Projeto/Site.png'); /* Caminho absoluto da sua imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.8); /* Cor de fundo do cabeçalho com transparência */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff; /* Cor original dos links do menu */
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Transição suave */
+}
+
+nav a:hover,
+nav a:focus {
+    text-decoration: underline; /* Efeito hover e foco */
+    outline: 2px solid #fff; /* Adiciona um contorno ao foco */
+}
+
+.wrapper {
+    flex-grow: 1; /* Permite que o conteúdo cresça e empurre o rodapé */
+}
+
+#descricao {
+    background-color: #f7f7f7;
+    padding: 20px;
+    text-align: center;
+}
+
+#servicos {
+    padding: 20px;
+    color: #000; /* Altera a cor das letras para preta */
+}
+
+#servicos ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#servicos li {
+    margin: 20px;
+    width: 250px;
+}
+
+#servicos img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#servicos h3 {
+    margin-top: 10px;
+    color: #000; /* Altera a cor das letras para preta */
+    font-size: 1.5rem; /* Tamanho de fonte responsivo */
+}
+
+#servicos but {
+    border-radius: none;
+    background: #fff;
+    color:#9800ce;
+    font-family: 'century gothic', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-decoration: none;
+    letter-spacing: 2px;
+    padding: 7px 25px;
+    transition: .4s;
+    cursor: hand ;;
+}
+
+#servicos but:hover {
+    background: #9800ce;
+    color:#fff
+}
+#servicos p {
+    font-size: 1rem; /* Tamanho de fonte responsivo */
+    color: #000; /* Altera a cor das letras para preta */
+}
+
+#servicos a {
+    color: #000; /* Altera a cor dos links na seção Serviços para preta */
+    text-decoration: none; /* Remove o sublinhado */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Transição suave */
+}
+
+#servicos a:hover,
+#servicos a:focus {
+    text-decoration: underline; /* Efeito hover para os links */
+}
+
+footer {
+    background-color: rgba(51, 51, 51, 0.8); /* Cor de fundo do rodapé com transparência */
+    color: #fff;
+    padding: 5px; /* Diminuído o padding do rodapé */
+    text-align: center;
+    clear: both;
+    font-size: 0.8rem; /* Diminuído o tamanho da fonte do rodapé */
+    margin-top: 10px; /* Adiciona uma margem superior para separação */
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column; /* Muda a direção para coluna em telas pequenas */
+        align-items: center; /* Central
+
